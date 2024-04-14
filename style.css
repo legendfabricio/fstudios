@@ -1,0 +1,154 @@
+body {
+    background-color: rgb(27, 27, 27);
+  }
+
+h1 {
+    font-family: "Audiowide", sans-serif;
+    font-size: 300%;
+    text-align-last: center;
+    color:white;
+
+}
+
+h2 {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-size: 200%;
+    text-align-last: center;
+    color:white;
+
+}
+
+h6 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50%;
+    text-align-last: center;
+    color:white;
+
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    text-align-last: center;
+    color:white;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(199, 199, 199);
+    color: rgb(27, 27, 27);
+}
+
+.container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containersmall {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding: 50px;
+}
+
+.logo:hover {
+    transform: scale(1.2)
+}
+
+.alignleft {
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.alignright {
+    height: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+.buttonkaypa {
+    border: 3px solid rgb(255, 123, 0);
+    border-radius: 4px;
+    padding: 15px 32px;
+    background-color: rgb(255, 196, 0);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.buttonemojitale {
+    border: 3px solid rgb(0, 102, 255);
+    border-radius: 4px;
+    padding: 15px 32px;
+    background-color: rgb(0, 153, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.buttonstellarballz {
+    border: 3px solid rgb(0, 102, 255);
+    border-radius: 4px;
+    padding: 15px 32px;
+    background-color: rgb(0, 153, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.buttondefault {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 15px 32px;
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    
+}
+
+.buttondefaultsmall {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    
+}
+
+button {
+    margin-right: 20px;
+}
+
