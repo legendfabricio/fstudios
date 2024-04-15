@@ -1,6 +1,7 @@
 body {
     background-color: rgb(27, 27, 27);
-  }
+
+}
 
 h1 {
     font-family: "Audiowide", sans-serif;
@@ -30,12 +31,13 @@ p {
     font-family: "Montserrat", sans-serif;
     text-align-last: center;
     color:white;
+    text-shadow: 2px 2px 2px black
 }
 
 .topnav {
     background-color: #333;
     overflow: hidden;
-  }
+}
 
 .topnav a {
     float: left;
@@ -45,6 +47,7 @@ p {
     text-decoration: none;
     font-family: 'Montserrat';
     font-size: 17px;
+
 }
 
 .topnav a:hover {
@@ -66,6 +69,14 @@ p {
     align-items: center;
 }
 
+.buttons {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+}
+
 .center {
     display: flex;
     justify-content: center;
@@ -74,10 +85,15 @@ p {
 
 .logo {
     padding: 50px;
+    transition: scale 0.3s;
 }
 
 .logo:hover {
-    transform: scale(1.2)
+    scale: 1.2;
+}
+
+.logo:active {
+    filter:brightness(5);
 }
 
 .alignleft {
@@ -99,20 +115,47 @@ p {
     border-radius: 4px;
     padding: 15px 32px;
     background-color: rgb(255, 196, 0);
+    background-image: linear-gradient(rgb(255, 196, 0), rgb(255, 123, 0));
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     color: white;
+    box-shadow: 2px 2px 5px black;
     
+}
+
+.buttonkaypa:hover {
+    border: 3px solid rgb(255, 123, 0);
+    border-radius: 4px;
+    padding: 15px 32px;
+    background-color: rgb(255, 196, 0);
+    background-image: linear-gradient(rgb(255, 123, 0), rgb(255, 196, 0));
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    box-shadow: 5px 5px 5px black;
 }
 
 .buttonemojitale {
     border: 3px solid rgb(0, 102, 255);
     border-radius: 4px;
     padding: 15px 32px;
-    background-color: rgb(0, 153, 255);
+    background-image: linear-gradient(rgb(0, 152, 255), rgb(0, 102, 255));
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
     color: white;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+.buttonemojitale:hover {
+    border: 3px solid rgb(0, 102, 255);
+    border-radius: 4px;
+    padding: 15px 32px;
+    background-image: linear-gradient(rgb(0, 102, 255), rgb(0, 153, 255));
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    box-shadow: 5px 5px 5px black;
     
 }
 
@@ -128,13 +171,27 @@ p {
 }
 
 .buttondefault {
-    border: 3px solid rgb(0, 0, 0);
+    border: 3px solid rgb(52, 54, 56);
     border-radius: 4px;
     padding: 15px 32px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(69, 72, 73);
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(69, 72, 73), rgb(52, 54, 56));
+    box-shadow: 2px 2px 5px black;
+    
+}
+
+.buttondefault:hover {
+    border: 3px solid rgb(52, 54, 56);
+    border-radius: 4px;
+    padding: 15px 32px;
+    background-color: rgb(69, 72, 73);
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(52, 54, 56), rgb(69, 72, 73));
     
 }
 
