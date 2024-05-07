@@ -1,0 +1,62 @@
+<canvas id="canvas" width="640" height="480" style="border:3px solid rgb(48, 48, 48); background-color:rgba(255, 255, 255, 0)"></canvas>
+
+<script>
+  const c = document.getElementById('canvas');
+  const ctx = c.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  window.addEventListener('resize', function(){
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  })
+
+  const mouse = {
+    x: null,
+    y: null,
+  }
+
+  canvas.addEventListener('click', function(event){
+    mouse.x = event.x;
+    mouse.y = event.y;
+    drawCircle();
+    
+  });
+
+  canvas.addEventListener('mousemove', function(event){
+    mouse.x = event.x;
+    mouse.y = event.y;
+    drawCircle();
+    
+  });
+
+
+
+  class Particle {
+    constructor(){
+      this.x = mouse.x;
+      this.y = mouse.y;
+      this.size = Math.random() * 5 + 1;
+      this.speedX = Math.random() * 3 - 1.5;
+      this.speedY = Math.random() * 3 - 1.5;
+    }
+    update(){
+      this.x += this.speedX; 
+      this.y += this.speedY; 
+    }
+    draw(){
+      ctx.fillStyle = 'blue';
+      ctx.beginPath();
+      ctx.arc(mouse.x, mouse.y, 20, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  function animate(){
+    ctx.clearRect(0, 0, canvas.width, canvas.weight);
+    drawCircle();
+    requestAnimationFrame(animate);
+
+  }
+  animate();
+</script>
