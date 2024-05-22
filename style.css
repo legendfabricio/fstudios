@@ -1,6 +1,6 @@
 body {
     background-color: rgb(27, 27, 27);
-    background: url(bg_repeat.png) left top repeat;
+    background: url(img/bg_repeat.png) left top repeat;
     background-size: 50px 50px;
 
 }
