@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Prompt", sans-serif;
+    font-family: "Unbounded", sans-serif;
     font-size: 200%;
     font-weight: 550;
     text-align-last: center;
@@ -50,7 +50,10 @@ p {
 .topnav {
     background-color: #333;
     background-image: linear-gradient(#333, #252525);
+    border-radius: 50px;
     overflow: hidden;
+    border: 5px solid #252525;
+    box-shadow: 0px 0px 10px black;
 }
 
 .topnav a {
@@ -61,19 +64,22 @@ p {
     text-decoration: none;
     font-family: 'Montserrat';
     font-size: 17px;
-
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .topnav a:hover {
     background-color: rgb(199, 199, 199);
-    background-image: linear-gradient(rgb(170, 170, 170), rgb(199, 199, 199)); 
+    background-image: linear-gradient(rgb(170, 170, 170), rgb(218, 217, 217)); 
     color: rgb(27, 27, 27);
+    text-shadow: 0px 0px 10px #5e5e5e;
+    box-shadow: 0px 0px 50px #5e5e5e;
 }
 
 .container {
     height: 200px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -99,8 +105,11 @@ p {
 }
 
 .logo {
-    padding: 50px;
     transition: scale 0.3s;
+    background-color: rgb(17, 17, 17);
+    padding: 15px;
+    border-radius: 10px;
+
 }
 
 .logo:hover {
@@ -149,32 +158,7 @@ p {
     filter:brightness(2);
 }
 
-.buttonkaypa {
-    border: 3px solid rgb(255, 123, 0);
-    border-radius: 4px;
-    padding: 15px 32px;
-    background-color: rgb(255, 196, 0);
-    background-image: linear-gradient(rgb(255, 196, 0), rgb(255, 123, 0));
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: white;
-    box-shadow: 2px 2px 5px black;
-    
-}
-
-.buttonkaypa:hover {
-    border: 3px solid rgb(255, 123, 0);
-    border-radius: 4px;
-    padding: 15px 32px;
-    background-color: rgb(255, 196, 0);
-    background-image: linear-gradient(rgb(255, 123, 0), rgb(255, 196, 0));
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: white;
-    box-shadow: 5px 5px 5px black;
-}
-
-.buttonemojitale {
+.buttonstellarballz {
     border: 3px solid rgb(0, 102, 255);
     border-radius: 4px;
     padding: 15px 32px;
@@ -183,10 +167,10 @@ p {
     font-size: 20px;
     color: white;
     box-shadow: 2px 2px 5px black;
-
+    
 }
 
-.buttonemojitale:hover {
+.buttonstellarballz:hover {
     border: 3px solid rgb(0, 102, 255);
     border-radius: 4px;
     padding: 15px 32px;
@@ -195,18 +179,6 @@ p {
     font-size: 20px;
     color: white;
     box-shadow: 5px 5px 5px black;
-    
-}
-
-.buttonstellarballz {
-    border: 3px solid rgb(0, 102, 255);
-    border-radius: 4px;
-    padding: 15px 32px;
-    background-color: rgb(0, 153, 255);
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: white;
-    
 }
 
 .buttondefault {
@@ -304,15 +276,30 @@ td {
     padding-left: 25px
 }
 
-.footer {
+footer {
     background-image: linear-gradient(rgb(27, 27, 27), rgb(17, 17, 17));
+    bottom: 0px;
     position: fixed;
-    bottom: 0;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 15px;
     padding-right: 15px;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.top {
+    background-image: linear-gradient(rgb(12, 14, 20), rgb(7, 8, 10));
+    background: url(img/bg_repeat2.png) left top repeat;
+    background-size: 50px 50px;
+}
+
+.topnavbg {
+    color: linear-gradient(rgb(12, 14, 20), rgb(7, 8, 10));
+    height: 100px;
+}
+
 
