@@ -36,6 +36,7 @@ h6 {
 
 p {
     font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     text-align-last: center;
     color:white;
     text-shadow: 2px 2px 2px black
@@ -63,9 +64,11 @@ p {
     padding: 14px 16px;
     text-decoration: none;
     font-family: 'Montserrat';
+    font-weight: 600;
     font-size: 17px;
     padding-left: 25px;
     padding-right: 25px;
+    transition: box-shadow 0.3s;
 }
 
 .topnav a:hover {
@@ -154,7 +157,8 @@ p {
 
 .kaypaicon {
     transition: scale 0.3s;
-    padding: 10px
+    padding: 10px;
+
 }
 
 .kaypaicon:hover {
@@ -322,6 +326,40 @@ footer {
     height: 100px;
 }
 
+.hover {
+    transition: scale 0.3s;
+    background-image: linear-gradient(rgb(27, 27, 27), rgb(17, 17, 17));
+    border: 3px solid rgb(15, 15, 15);
+    padding: 15px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px black;
+    scale: 1.2;
+}
+
+.hover:hover {
+    scale: 1.4;
+    box-shadow: 0px 0px 10px rgb(141, 141, 141);
+    animation: glow2 3s ease-in-out infinite;
+}
+
+.divisor {
+    height: 50px
+}
+
+@keyframes glow2 {
+    0% {
+        box-shadow: 0px 0px 10px rgb(141, 141, 141);
+    }
+
+    50% {
+        box-shadow: 0px 0px 15px rgb(141, 141, 141);
+    }
+
+    100% {
+        box-shadow: 0px 0px 10px rgb(141, 141, 141);
+    }
+}
+
 @media all and (max-width: 700px) {
     .topnav a {
         font-size: 10px;
@@ -407,6 +445,7 @@ footer {
         padding-bottom: 10px;
     }
   }
+
 
 
 
