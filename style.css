@@ -119,7 +119,6 @@ p {
 }
 
 .logo:hover {
-
     animation: glow 3s ease-in-out infinite;
     transform: translate(0px, -25px);
 }
