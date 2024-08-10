@@ -108,21 +108,20 @@ p {
 }
 
 .logo {
-    transition: scale 0.3s;
+    transition: transform 0.3s;
     background-color: rgb(17, 17, 17);
-    border: 5px solid #252525;
+    border: 0px solid #252525;
     padding: 15px;
+    padding-bottom: 15px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 0px 5px rgb(17, 17, 17);
 
 }
 
 .logo:hover {
-    scale: 1.2;
-    box-shadow: 0px 0px 50px #5e5e5e;
-    background-color: rgb(11, 12, 17);
-    border: 5px solid #131825;
+
     animation: glow 3s ease-in-out infinite;
+    transform: translate(0px, -25px);
 }
 
 @keyframes glow {
