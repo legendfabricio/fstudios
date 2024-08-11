@@ -345,6 +345,22 @@ footer {
     height: 50px
 }
 
+.fnews {
+    float: right;
+    padding: 25px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    background-image: linear-gradient(rgb(27, 27, 27), rgb(17, 17, 17));
+    box-shadow: 5px 5px 25px black;
+    border: 5px solid rgb(10, 10, 10)
+}
+
+.newstab {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+}
+
 @keyframes glow2 {
     0% {
         box-shadow: 0px 0px 10px rgb(141, 141, 141);
